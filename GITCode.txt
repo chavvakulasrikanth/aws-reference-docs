@@ -1,0 +1,608 @@
+
+DELL@DESKTOP-9VL536G MINGW64 ~
+$ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+DELL@DESKTOP-9VL536G MINGW64 ~
+$ git clone https://github.com/sbrTechWorld/terraform-class-demo.git
+Cloning into 'terraform-class-demo'...
+remote: Enumerating objects: 21, done.
+remote: Counting objects: 100% (21/21), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 21 (delta 6), reused 13 (delta 3), pack-reused 0
+Receiving objects: 100% (21/21), done.
+Resolving deltas: 100% (6/6), done.
+
+DELL@DESKTOP-9VL536G MINGW64 ~
+$ dir
+3D\ Objects            ntuser.dat.LOG1
+AppData                ntuser.dat.LOG2
+Application\ Data      NTUSER.DAT{e91a0a51-e59b-11e9-b028-8cec4b123551}.TM.blf
+Contacts               NTUSER.DAT{e91a0a51-e59b-11e9-b028-8cec4b123551}.TMContainer00000000000000000001.regtrans-ms
+Cookies                NTUSER.DAT{e91a0a51-e59b-11e9-b028-8cec4b123551}.TMContainer00000000000000000002.regtrans-ms
+Documents              ntuser.ini
+Downloads              OneDrive
+Favorites              PrintHood
+IntelGraphicsProfiles  Recent
+Links                  Saved\ Games
+Local\ Settings        Searches
+MicrosoftEdgeBackups   SendTo
+Music                  Start\ Menu
+My\ Documents          Templates
+NetHood                terraform-class-demo
+NTUSER.DAT             Videos
+
+DELL@DESKTOP-9VL536G MINGW64 ~
+$ ls
+'3D Objects'/             ntuser.dat.LOG1
+ AppData/                 ntuser.dat.LOG2
+'Application Data'@       NTUSER.DAT{e91a0a51-e59b-11e9-b028-8cec4b123551}.TM.blf
+ Contacts/                NTUSER.DAT{e91a0a51-e59b-11e9-b028-8cec4b123551}.TMContainer00000000000000000001.regtrans-ms
+ Cookies@                 NTUSER.DAT{e91a0a51-e59b-11e9-b028-8cec4b123551}.TMContainer00000000000000000002.regtrans-ms
+ Documents/               ntuser.ini
+ Downloads/               OneDrive/
+ Favorites/               PrintHood@
+ IntelGraphicsProfiles/   Recent@
+ Links/                  'Saved Games'/
+'Local Settings'@         Searches/
+ MicrosoftEdgeBackups/    SendTo@
+ Music/                  'Start Menu'@
+'My Documents'@           Templates@
+ NetHood@                 terraform-class-demo/
+ NTUSER.DAT               Videos/
+
+DELL@DESKTOP-9VL536G MINGW64 ~
+$ pwd
+/c/Users/DELL
+
+DELL@DESKTOP-9VL536G MINGW64 ~
+$ cd D:\DevOpsTraining
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining
+$ pwd
+/d/DevOpsTraining
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining
+$ git clone https://github.com/sbrTechWorld/terraform-class-demo.git
+Cloning into 'terraform-class-demo'...
+remote: Enumerating objects: 21, done.
+remote: Counting objects: 100% (21/21), done.
+Receiving objects: 100% (21/21), done.16)
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 21 (delta 6), reused 13 (delta 3), pack-reused 0
+Resolving deltas: 100% (6/6), done.
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining
+$ cd..
+bash: cd..: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining
+$ cd ..
+
+DELL@DESKTOP-9VL536G MINGW64 /d
+$ pws
+bash: pws: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d
+$ pwd
+/d
+
+DELL@DESKTOP-9VL536G MINGW64 /d
+$ cd DevOpsTraining/
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining
+$ git clone git@github.com:chavvakulasrikanth/terraform-aws-demo.git
+Cloning into 'terraform-aws-demo'...
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,13.234.176.102' (RSA) to the list of known hosts.
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining
+$ ls
+"2021-02-03 21.29.23 sbr techworld's Personal Meeting Room 3362467691"/
+"2021-02-04 21.47.30 sbr techworld's Personal Meeting Room 3362467691"/
+"2021-02-05 21.42.56 sbr techworld's Personal Meeting Room 3362467691"/
+"2021-02-06 22.17.00 sbr techworld's Personal Meeting Room 3362467691"/
+"2021-02-08 21.55.37 sbr techworld's Personal Meeting Room 3362467691"/
+"2021-02-10 21.45.57 sbr techworld's Personal Meeting Room 3362467691"/
+"2021-02-11 22.41.23 sbr techworld's Personal Meeting Room 3362467691"/
+"2021-02-12 21.56.01 sbr techworld's Personal Meeting Room 3362467691"/
+"2021-02-13 21.48.24 sbr techworld's Personal Meeting Room 3362467691"/
+"2021-02-15 21.57.08 sbr techworld's Personal Meeting Room 3362467691"/
+"2021-02-16 21.39.00 sbr techworld's Personal Meeting Room 3362467691"/
+"2021-02-17 22.28.51 sbr techworld's Personal Meeting Room 3362467691"/
+"2021-02-19 21.16.57 sbr techworld's Personal Meeting Room 3362467691"/
+"2021-02-20 21.35.31 sbr techworld's Personal Meeting Room 3362467691"/
+'AWS CLI_Config.txt'
+ devops-master-class-master/
+ Errors/
+ Files/
+'Jenkins Installation.txt'*
+ puttylog/
+ terraform/
+ terraform-aws-demo/
+ terraform-class-demo/
+'user data.txt'
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining
+$ cd terraform-aws-demo/
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ \git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ec2.tf
+        iam.tf
+        provider.tf
+        s3-ewn.tf
+        s3-remote.tf
+        s3.tf
+        sg.tf
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ git add .
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ git commit -m "adding new code"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'DELL@DESKTOP-9VL536G.(none)')
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ git config --global user.email "chavvakulsrikanth@gmail.com"
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ git config --global user.name "chavvakulasrikanth"
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ git push
+Warning: Permanently added the RSA host key for IP address '13.234.210.38' to the list of known hosts.
+Everything up-to-date
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   ec2.tf
+        new file:   iam.tf
+        new file:   provider.tf
+        new file:   s3-ewn.tf
+        new file:   s3-remote.tf
+        new file:   s3.tf
+        new file:   sg.tf
+
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ git push
+Everything up-to-date
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ git add .
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ git commit -m "demo code"
+[main ec827be] demo code
+ 8 files changed, 134 insertions(+), 1 deletion(-)
+ create mode 100644 ec2.tf
+ create mode 100644 iam.tf
+ create mode 100644 provider.tf
+ create mode 100644 s3-ewn.tf
+ create mode 100644 s3-remote.tf
+ create mode 100644 s3.tf
+ create mode 100644 sg.tf
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ git push
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 1.55 KiB | 396.00 KiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To github.com:chavvakulasrikanth/terraform-aws-demo.git
+   a25e587..ec827be  main -> main
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ git config --global user.name "Your Name"
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ DELL@DESKTOP-9VL536G MINGW64 ~
+bash: DELL@DESKTOP-9VL536G: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ $ git
+bash: $: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+bash: path: No such file or directory
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+bash: path: No such file or directory
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$            [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+bash: [-p: command not found
+bash: --paginate: command not found
+bash: -P: command not found
+bash: --no-pager]: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$            [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+bash: path: No such file or directory
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$            <command> [<args>]
+bash: command: No such file or directory
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ These are common Git commands used in various situations:
+bash: These: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ start a working area (see also: git help tutorial)
+bash: syntax error near unexpected token `('
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    clone             Clone a repository into a new directory
+bash: clone: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    init              Create an empty Git repository or reinitialize an existing one
+bash: init: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ work on the current change (see also: git help everyday)
+bash: syntax error near unexpected token `('
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    add               Add file contents to the index
+bash: add: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    mv                Move or rename a file, a directory, or a symlink
+mv: target 'symlink' is not a directory
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    restore           Restore working tree files
+Directory /usr/etc/backup is not found.
+The following directories and files are needed for the backup to function:
+
+1. Directory with configuration files and file lists:
+/usr/etc/backup
+2. Directory for backup log files
+/usr/etc/backup/log
+3. Main configuration file
+/usr/etc/backup/backup-specs
+
+Please, create these and invoke the script again.
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    rm                Remove files from the working tree and from the index
+rm: cannot remove 'Remove': No such file or directory
+rm: cannot remove 'files': No such file or directory
+rm: cannot remove 'from': No such file or directory
+rm: cannot remove 'the': No such file or directory
+rm: cannot remove 'working': No such file or directory
+rm: cannot remove 'tree': No such file or directory
+rm: cannot remove 'and': No such file or directory
+rm: cannot remove 'from': No such file or directory
+rm: cannot remove 'the': No such file or directory
+rm: cannot remove 'index': No such file or directory
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    sparse-checkout   Initialize and modify the sparse-checkout
+bash: sparse-checkout: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ examine the history and state (see also: git help revisions)
+bash: syntax error near unexpected token `('
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    bisect            Use binary search to find the commit that introduced a bug
+bash: bisect: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    diff              Show changes between commits, commit and working tree, etc
+diff: extra operand 'between'
+diff: Try 'diff --help' for more information.
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    grep              Print lines matching a pattern
+grep: lines: No such file or directory
+grep: matching: No such file or directory
+grep: a: No such file or directory
+grep: pattern: No such file or directory
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    log               Show commit logs
+bash: log: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    show              Show various types of objects
+bash: show: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    status            Show the working tree status
+bash: status: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ grow, mark and tweak your common history
+bash: grow,: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    branch            List, create, or delete branches
+bash: branch: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    commit            Record changes to the repository
+bash: commit: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    merge             Join two or more development histories together
+bash: merge: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    rebase            Reapply commits on top of another base tip
+Reapply: skipped because nonexistent.
+commits: skipped because nonexistent.
+on: skipped because nonexistent.
+top: skipped because nonexistent.
+of: skipped because nonexistent.
+another: skipped because nonexistent.
+base: skipped because nonexistent.
+tip: skipped because nonexistent.
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    reset             Reset current HEAD to the specified state
+Usage: reset [options] [terminal]
+
+Options:
+  -c          set control characters
+  -e ch       erase character
+  -I          no initialization strings
+  -i ch       interrupt character
+  -k ch       kill character
+  -m mapping  map identifier to type
+  -Q          do not output control key settings
+  -q          display term only, do no changes
+  -r          display term on stderr
+  -s          output TERM set command
+  -V          print curses-version
+  -w          set window-size
+
+If neither -c/-w are given, both are assumed.
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    switch            Switch branches
+bash: switch: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    tag               Create, list, delete or verify a tag object signed with GPG
+bash: tag: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ collaborate (see also: git help workflows)
+bash: syntax error near unexpected token `see'
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    fetch             Download objects and refs from another repository
+bash: fetch: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    pull              Fetch from and integrate with another repository or a local branch
+bash: pull: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$    push              Update remote refs along with associated objects
+bash: push: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ 'git help -a' and 'git help -g' list available subcommands and some
+bash: git help -a: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ concept guides. See 'git help <command>' or 'git help <concept>'
+bash: concept: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ to read about a specific subcommand or concept.
+bash: to: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ See 'git help git' for an overview of the system.
+bash: See: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ DELL@DESKTOP-9VL536G MINGW64 ~
+bash: DELL@DESKTOP-9VL536G: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ $ git clone https://github.com/sbrTechWorld/terraform-class-demo.git
+bash: $: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ Cloning into 'terraform-class-demo'...
+bash: Cloning: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ remote: Enumerating objects: 21, done.
+bash: remote:: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ remote: Counting objects: 100% (21/21), done.
+bash: syntax error near unexpected token `('
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ remote: Compressing objects: 100% (16/16), done.
+bash: syntax error near unexpected token `('
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ remote: Total 21 (delta 6), reused 13 (delta 3), pack-reused 0
+bash: syntax error near unexpected token `('
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ Receiving objects: 100% (21/21), done.
+bash: syntax error near unexpected token `('
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ Resolving deltas: 100% (6/6), done.
+bash: syntax error near unexpected token `('
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ DELL@DESKTOP-9VL536G MINGW64 ~
+bash: DELL@DESKTOP-9VL536G: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ $ dir
+bash: $: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ 3D\ Objects            ntuser.dat.LOG1
+bash: 3D Objects: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ AppData                ntuser.dat.LOG2
+bash: AppData: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ Application\ Data      NTUSER.DAT{e91a0a51-e59b-11e9-b028-8cec4b123551}.TM.blf
+bash: Application Data: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ Contacts               NTUSER.DAT{e91a0a51-e59b-11e9-b028-8cec4b123551}.TMContainer00000000000000000001.regtrans-ms
+bash: Contacts: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ Cookies                NTUSER.DAT{e91a0a51-e59b-11e9-b028-8cec4b123551}.TMContainer00000000000000000002.regtrans-ms
+bash: Cookies: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ Documents              ntuser.ini
+bash: Documents: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ Downloads              OneDrive
+bash: Downloads: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ Favorites              PrintHood
+bash: Favorites: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ IntelGraphicsProfiles  Recent
+bash: IntelGraphicsProfiles: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ Links                  Saved\ Games
+bash: Links: command not found
+
+DELL@DESKTOP-9VL536G MINGW64 /d/DevOpsTraining/terraform-aws-demo (main)
+$ Local\ Settings        Searches
+bash: Local Settings: command not found

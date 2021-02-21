@@ -1,0 +1,16 @@
+sudo yum update
+sudo yum install python3
+python3 --version
+pip3 install --upgrade --user awscli
+ls -a ~
+export PATH=$HOME/.local/bin:$PATH
+source ~/.bash_profile
+aws --version
+
+
+
+
+
+i-00783973d383347b9
+
+

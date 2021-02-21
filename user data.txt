@@ -1,0 +1,31 @@
+#/usr/bin/env bash
+sudo yum install -y nginx
+sudo systemctl enable nginx
+sudo systemctl start nginx
+
+
+#!/bin/bash
+sudo yum install -y nginx
+sudo systemctl enable nginx
+sudo systemctl start nginx
+
+
+Jenkins Installation:
+=====================
+https://www.linuxtechi.com/install-configure-jenkins-on-centos-7-rhel-7/
+
+
+AWS CLI
+=======
+https://docs.aws.amazon.com/cli/latest/userguide/install-linux-al2017.html
+
+
+aws configure --profile jenkins
+
+
+Default region name [None]: eu-west-2
+
+
+aws ec2 run-instances --instance-type t2.micro --image-id ami-098828924dc89ea4a --key-name aws-ec2  --profile=jenkins
+
+

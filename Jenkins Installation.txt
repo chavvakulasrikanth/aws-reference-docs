@@ -1,0 +1,32 @@
+#! /bin/bash
+sudo -i
+yum install -y wget
+wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat-stable/jenkins.repo
+rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
+yum install -y java-1.8.0-openjdk
+yum install -y jenkins
+systemctl start jenkins
+systemctl enable jenkins
+yum install -y firewalld
+systemctl start firewalld
+firewall-cmd --zone=public --add-port=8080/tcp --permanent
+firewall-cmd --zone=public --add-service=http --permanent
+firewall-cmd --reload
+
+
+
+http://18.135.17.4:8080/
+
+87f6973702ab4790ad2353ed6cc1b1b5
+
+
+stages {
+        stage('ec2stop') {
+            steps {
+                sh '/root/.local/bin/aws ec2 stop-instances --instance-ids i-00783973d383347b9 --profile=jenkins'
+            }
+        }
+    }
+}
+
+
